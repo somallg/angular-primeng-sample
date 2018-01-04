@@ -1,6 +1,6 @@
 {
   "name": "angular-primeng-sample",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=8.9.1 <9.4.0",
@@ -13,7 +13,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepush": "gulp lint",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
     "release": "standard-version"
