@@ -18,6 +18,5 @@ export class AppComponent {
     console.log('a');
     console.log('a');
     console.log('a');
-    console.log('a');
   }
 }
