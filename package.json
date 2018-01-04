@@ -1,6 +1,6 @@
 {
   "name": "angular-primeng-sample",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "engines": {
     "node": ">=8.9.1 <9.4.0",
