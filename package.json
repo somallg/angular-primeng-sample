@@ -12,7 +12,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepush": "gulp lint"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +46,7 @@
     "gulp-prettier-plugin": "^1.2.0",
     "gulp-print": "^2.0.1",
     "gulp-tslint": "^8.1.2",
+    "husky": "^0.14.3",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
