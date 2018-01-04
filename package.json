@@ -1,6 +1,6 @@
 {
   "name": "angular-primeng-sample",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "engines": {
     "node": ">=8.9.1 <9.4.0",
@@ -15,7 +15,8 @@
     "e2e": "ng e2e",
     "prepush": "gulp lint",
     "commit": "git-cz",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
@@ -67,6 +68,7 @@
     "prettier": "^1.9.2",
     "protractor": "~5.1.2",
     "shelljs": "^0.7.8",
+    "standard-version": "^4.3.0",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2",
