@@ -21,9 +21,11 @@ function loadTask(fileName, taskName) {
 gulp.task('format:enforce', loadTask('format', 'enforce'));
 gulp.task('format', loadTask('format', 'format'));
 gulp.task('prettier', loadTask('format', 'prettier'));
-gulp.task('lint', ['format:enforce', 'validate-commit-messages', 'tslint']);
-gulp.task('lint', ['format:enforce', 'validate-commit-messages', 'tslint']);
+gulp.task('lint', ['prettier', 'validate-commit-messages', 'tslint']);
+gulp.task('lint', ['prettier', 'validate-commit-messages', 'tslint']);
 gulp.task('tslint', loadTask('lint'));
 gulp.task('validate-commit-messages', loadTask('validate-commit-message'));
+
+gulp.task('changelog', loadTask('changelog'));
 
 gulp.task('hello', loadTask('hello'));

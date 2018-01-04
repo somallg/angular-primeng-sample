@@ -1,6 +1,6 @@
 {
   "name": "angular-primeng-sample",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "engines": {
     "node": ">=8.9.1 <9.4.0",
@@ -13,7 +13,14 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepush": "gulp lint"
+    "prepush": "gulp lint",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "private": true,
   "dependencies": {
@@ -39,6 +46,8 @@
     "@types/node": "~6.0.60",
     "clang-format": "^1.0.41-b",
     "codelyzer": "^4.0.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-clang-format": "^1.0.23",
     "gulp-conventional-changelog": "^1.1.7",
@@ -61,6 +70,7 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2",
+    "validate-commit-msg": "^2.14.0",
     "yargs": "^10.0.3"
   }
 }
